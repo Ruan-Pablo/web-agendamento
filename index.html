@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Agendamento para barbearia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="col1">
+            <fieldset>
+                <div class="titulo">
+                    <legend>
+                        <h2>Agende um Atendimento</h2>
+                    </legend>
+                    <p>Selecione data, horário, e informe o nome do cliente para creiar o agendamento</p>
+                </div>
+                <form>
+                    <div class="entradas">
+                        <div>
+                            <label>Data</label><br>
+                            <input type="date"/><br>
+                        </div>
+                        <div>
+                            <label>Cliente</label><br>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <i class="icon icon-user">
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="Nome do cliente"/>
+                                            </td>
+                                        </tr>      
+                                    </table>
+                                <br>
+                            </div>
+                    </div>
+                    </form>
+                    <br>
+                    <label>Horários</label>
+                    <br>
+                    <label>Manhã</label>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li class="active">09:00</li>
+                                <li class="disabled">10:00</li>
+                                <li>11:00</li>
+                                <li>12:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <label>Tarde</label>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>13:00</li>
+                                <li>14:00</li>
+                                <li class="disabled">15:00</li>
+                                <li>16:00</li>
+                                <li>17:00</li>
+                                <li>18:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <label>Noite</label>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>19:00</li>
+                                <li>20:00</li>
+                                <li>21:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </fieldset>
+            <button class="btn-agendar">AGENDAR</button>
+        </section>
+        <section class="col2">
+            <fieldset>
+                <legend>
+                    <h2>Agendamentos</h2>
+                </legend>
+                <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+                <div class="container">
+
+                    <form class="entradas">
+                        <input type="date" />
+                    </form>
+                    <div class="card">
+                        <div>
+                            <label><i class="icon-sun"></i> <b>Manhã</b></label> <label>09h-12h</label>
+                        </div>
+                        <ul>
+                            <li><b>09:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                            <li><b>10:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                    <div>
+                        <label><i class="icon-moon"></i> <b>Tarde</b></label> <label>13h-18h</label>
+                    </div>
+                    <ul>
+                        <li><b>14:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                        <li><b>16:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                        <li><b>17:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div>
+                        <label><i class="icon-moon"></i> <b>Noite</b></label> <label>19h-21h</label>
+                    </div>
+                    <ul>
+                        <li><b>19:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                        <li><b>20:00</b> <label>Murilo</label><i aria-label="Remover" class="icon-remove"></i></li>
+                    </ul>
+                </div>
+            </div>
+                
+            </fieldset>
+        </section>
+    </main>
+
+    <br>
+    <br>
+</body>
+
+</html>

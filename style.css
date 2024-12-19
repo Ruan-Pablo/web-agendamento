@@ -1,0 +1,143 @@
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #19181B;
+    height: 100vh;
+    display: flex;
+
+}
+main{
+    display: flex;
+    flex: 1 1 100vw;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.col1,.col2{
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.col1{
+    flex: 1 1 30%;
+    background-color: #232225;
+    border-radius: 15px;
+}
+.col2 {
+    flex: 20 1 50%;
+}
+.titulo {
+    text-align: center;
+}
+fieldset{
+    border-style: none;
+}
+ul{
+    list-style-type: none;
+}
+.entradas{
+    display: flex;
+
+}
+.entradas div{
+    text-align: left;
+    padding: 10px;
+    flex-direction: column;
+}
+.entradas div input, .entradas input{          
+    border: #3E3C41 solid 1px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    color: #98959D;
+    padding: 5px;
+}
+.col1 ul {
+    color: #98959D;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.col1 ul li ul li{
+    color: #98959D;
+    background-color: #2E2C30;
+    border:#3E3C41 solid 1px;
+    border-radius: 10px;
+    width: 80px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.col1 ul li ul .disabled{
+    color: #3E3C41;
+    background-color: transparent;
+    border-color: #3E3C41;
+}
+.col1 ul li ul .active{
+    border: #B8952E solid 1px;
+    color: #B8952E;
+}
+
+legend + p{
+    color: #98959D;
+    padding: 10px;
+}
+.btn-agendar{
+    align-self: center;
+    width: 80%;
+    height: 40px;
+    text-transform: capitalize;
+    background-color: #B8952E;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.card {
+    border: #3E3C41 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card div{
+    display: flex;
+    padding: 15px;
+    border-bottom: #3E3C41 solid 1px;
+    justify-content: space-between;
+}
+
+.card ul{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.card ul li{
+    display: flex;
+    justify-content: center;
+}
+.card ul li b{
+    flex:1 1 80px;
+    text-align: center;
+}
+.card ul li label{
+    flex: 20 1 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
